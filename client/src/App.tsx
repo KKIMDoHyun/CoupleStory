@@ -1,12 +1,10 @@
 import React, { useEffect } from "react";
 import axios from "axios";
-import "./App.css";
 
 // 화면
-import HeaderScreen from "./screens/Header";
-import FooterScreen from "./screens/Footer";
 
-import ContentScreen from "./screens/Content";
+import MainPageScreen from "./screens/MainPageScreen";
+import ContentScreen from "./screens/ContentScreen";
 
 function App() {
   const callApi = async () => {
@@ -17,9 +15,8 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <HeaderScreen />
+      <MainPageScreen />
       <ContentScreen />
-      <FooterScreen />
     </div>
   );
 }
