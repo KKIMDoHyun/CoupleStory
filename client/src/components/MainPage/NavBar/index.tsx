@@ -17,7 +17,9 @@ const NavBar: React.FC = observer(() => {
           console.log("title 클릭");
         }}
       >
-        <span className="title-text">{string.TITLE}</span>
+        <Link to="main" spy={true} smooth={true} offset={-76} duration={500}>
+          <span className="title-text">{string.TITLE}</span>
+        </Link>
       </button>
       <button className="custom-btn btn-6" onClick={() => {}}>
         <Link

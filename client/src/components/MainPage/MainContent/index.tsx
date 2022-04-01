@@ -9,7 +9,7 @@ import "./MainContent.style.css";
 
 const MainContent: React.FC = observer(() => {
   return (
-    <div className="main-container">
+    <div className="main-container" id="main">
       {DateStore.getLovingDay().map((v, i) => {
         return (
           <span key={i} className="date-text">

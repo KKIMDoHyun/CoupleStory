@@ -1,6 +1,43 @@
 .introduction-container {
   background: #eeeeee;
   height: 92vh;
-  /* background-color: red; */
   border-bottom: solid;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+.male-introduction {
+  flex: 1;
+  background: #eeffee;
+  height: 100%;
+  margin-right: 5%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.female-introduction {
+  flex: 1;
+  background: #eeffee;
+  height: 100%;
+  margin-right: 10%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  margin-bottom: auto;
+  margin-top: 10%;
+}
+
+span {
+  font-size: large;
+  font-weight: 700;
+  margin-bottom: 3%;
 }
