@@ -6,5 +6,5 @@ export type DateStoreType = {
 
   getToday: () => moment.Moment;
   getFirstDay: () => moment.Moment;
-  getLovingDay: () => number;
+  getLovingDay: () => number[];
 };

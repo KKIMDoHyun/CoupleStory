@@ -14,7 +14,15 @@ const DateStore: DateStoreType = observable({
     return this.FirstDay;
   },
   getLovingDay() {
-    return this.today.diff(this.FirstDay, "days");
+    let day: number = this.today.diff(this.FirstDay, "days");
+    let dayArr = [];
+    let temp = 10;
+    while (day > 0) {
+      dayArr.push(day % temp);
+      day = Math.floor(day / temp);
+    }
+    dayArr.reverse();
+    return dayArr;
   },
 });
 

@@ -10,15 +10,14 @@ import "./MainContent.style.css";
 const MainContent: React.FC = observer(() => {
   return (
     <div className="main-container">
-      <h1
-        style={{
-          margin: 0,
-          border: "solid",
-          marginBottom: "8vh",
-        }}
-      >
-        {DateStore.getLovingDay()}일
-      </h1>
+      {DateStore.getLovingDay().map((v, i) => {
+        return (
+          <span key={i} className="date-text">
+            {v}
+          </span>
+        );
+      })}
+      {/* {DateStore.getLovingDay()}일 */}
     </div>
   );
 });
